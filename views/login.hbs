@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+   <nav>
+        <div class="nav_container">
+            <div class="logo">
+                <a href="/">Practico</a>
+            </div>
+            <ul class="links">
+                <li><a href="/assessment">Assessment</a></li>
+                <li><a href="/post_assessment">Post Assessment</a></li>
+                <li><a href="/result">Result</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="login_container">
+        <form id="login_form">
+        <h1>Login</h1>
+            <div class="input_field">
+                <label for="username">Username</label> <br>
+                <input type="text" id="username" placeholder="Enter username" >
+            </div>
+            <div class="input_field">
+                <label for="password">Password</label> <br>
+                <input type="password" id="password" placeholder="Password" >
+            </div>
+             <div class="input_field">
+                <input type="submit" id="submit_btn" value="Sign in" >
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js" ></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practico</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/assessment.css" />
+  </head>
+  <body>
+   <nav>
+        <div class="nav_container">
+            <div class="logo">
+                <a href="/">Practico</a>
+            </div>
+            <ul class="links">
+                <li><a href="/assessment">Assessment</a></li>
+                <li><a href="/post_assessment">Post Assessment</a></li>
+                <li><a href="/result">Result</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    {{#if quizTaken  }}
+    <h1>You have already taken the quiz. Go to the result page</h1>
+    {{else if preQuiz }}
+<h1>finish pre assessment quiz</h1>
+    {{else}}
+      
+<div class="accessment_container">
+      <div id="all_quiz">
+      </div>
+      <div class="radio_field_btn">
+        <input type="submit" class="submit_btn" value="Submit" />
+      </div>
+    </div>
+    {{/if}}
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/postAssessment.js"></script>
+  </body>
+</html>

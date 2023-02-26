@@ -1,0 +1,26 @@
+.login_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.login_container form  {
+    background-color: white;
+    padding: 50px ;
+}
+.login_container form .input_field {
+    margin: 15px 0px;
+}
+.login_container form .input_field  label {
+    font-weight: bold;
+}
+.login_container form .input_field input {
+    padding: 10px 15px;
+    outline: none;
+}
+.login_container form .input_field #submit_btn {
+    width: 100%;
+    background-color: var(--btn-color);
+    outline: none;
+    border: none;
+    color: white;
+}

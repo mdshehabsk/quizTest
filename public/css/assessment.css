@@ -1,0 +1,39 @@
+
+
+.accessment_container {
+    margin: 100px 0;
+    display: grid;
+    justify-content: center;
+
+}
+.accessment_container #all_quiz  {
+    background-color: white;
+    padding: 20px 50px;
+    min-width: 500px;
+    max-width: 500px;
+}
+.accessment_container  .radio_field {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+.accessment_container  .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.accessment_container  .buttons button {
+    padding: 5px 15px;
+    color: white;
+    background-color: var(--btn-color);
+    border: none;
+    outline: none;
+}
+.accessment_container  .submit_btn {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 15px;
+    outline: none;
+    padding: 10px ;
+    border: 1px solid black;
+}
