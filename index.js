@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cookieParser())
 app.get('/',isLogout,(req,res)=> {
-    res.send('nice')
-    // res.render('login')
+    // res.send('nice')
+    res.render('login')
 })
 
 app.get('/assessment',isLogin,async (req,res,next)=> {
